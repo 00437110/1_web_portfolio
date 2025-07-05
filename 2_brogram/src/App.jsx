@@ -1,4 +1,5 @@
 import Grid from "./components/Grid"
+import Hero from "./components/Hero"
 import Layout from "./components/Layout"
 
 
@@ -8,6 +9,7 @@ function App() {
     <Layout>
 
       <main>
+        <Hero/>
         <Grid/>
 
 
