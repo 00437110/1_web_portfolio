@@ -16,9 +16,7 @@ export default function Layout(props) {
         <footer>
             <p>Built by <a href="" target="_blank">Erick </a><br/>
             Styled with <a href="https://fantacss.smoljames.com/" target="_blank">FantaCSS</a>
-            
             </p>
-
         </footer>
     )
 //USER.netifly.app

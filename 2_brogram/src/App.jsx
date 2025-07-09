@@ -11,8 +11,6 @@ function App() {
       <main>
         <Hero/>
         <Grid/>
-
-
       </main>
 
     </Layout>
