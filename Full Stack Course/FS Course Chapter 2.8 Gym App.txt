@@ -1,0 +1,195 @@
+0 00 in handleComplete, we need to create a newObj,  because state variables are immuatble, we cannot change then without their function, and since we are not bringing it to the function, we need  a new object inside the function
+
+const newObj = { ...data }
+
+it will contain all the info of "data" , our object weights
+
+like a key called weights and a value of the weights
+
+0 54 we add a new key called isComplete. boolean and set it as true.
+
+1 40 then we call handleSave in order to save the information
+
+handle complete also saves, but we have created from within a new attribute, isComplete
+
+handle save updates the local storage
+
+2 20 in handleSave
+we will work with savedWorkouts
+and within the new object, we will spread the data we got
+
+
+data could be either an object with just weights, or the weights and complete status
+
+3 50 we will give it a key isComplete
+if it is true, the workout has already been completed
+if it is false, we will keep it the same
+so whatever information it has, will be kept as it is
+
+
+4 40 if data doesn't exist, it will be undefined. and it is a bad situation
+
+we use !!, a double not key, it converts it to an equivalent boolean
+
+it will force a value to be either true or false
+
+a single ! converts it to the opposite
+
+it converts it to false if there is nothin
+
+5 28 if it is false, we can see if it is already complte
+
+I could compelte a workout, modify it and save it instead of complete it a second time
+
+I have to check previous records if they hace completed it before
+
+6 00 we  use the optional chaining syntax in case any of these values don't exist.
+
+|| !! savedWorkouts?.[index]?.isComplete
+
+it will look up the index of the workout in savedWorkouts?.[index]?.isComplete
+
+it is used in case ANY of these values doesn't exist.
+
+if they do not exist, they will return "undefined" which will later be turned into "false"
+
+if the data isn't complete it's false.
+
+6 40 if data isn't complete, and we haven't found it complete from before either, then it is obviously incomplete
+
+
+7 00 beneath the new const newObj we can set saved workouts to the new object, and then the selected workout will be null, to close the selected workout
+
+we will also add a local storage variable to work with it
+
+localStorage.setItem('brogram', JSON.stringify(newObj))
+
+8 30 we can now test it in the program. Try to save weights and we will check the local storage
+
+9 00 iscomplete is False at the moment.
+
+when the page loads we want it to check the saved data and read it in so, everytthing is fresh inside the react
+
+we will import useEffect from react
+import { useState, useEffect } from "react"
+
+9 40 
+    useEffect(()=>{}, [])
+
+We invoke a useEffect hook and it receives a callback function as the first argument and an array as the second argument.
+
+The second argument is a dependency array, depending on what is in it, you run the first block of code
+
+9 50 Now, if we want this block of code to only run when our page is up and running, we're ready to read
+
+in the data.
+
+We just leave it blank just the way that it is.
+
+the code will run when the page loads
+
+10 25 let to create a variable that will be overwritten
+
+a new check will se if localStorage using
+
+if(localStorage.getItem('brogram')){// if there is any data here, it will comeback true
+            savedData = JSON.parse(localStorage.getItem('brogram'))
+
+        } 
+
+being a json.stringify - ed string, we need to parse it back to be read as a variable
+
+11 25
+ useEffect(() => {
+        if (!localStorage || !savedWorkouts) { return }
+        let savedData = {} //let allows us to overwrite it
+        if(localStorage.getItem('brogram')){// if there is any data here, it will comeback true
+            savedData = JSON.parse(localStorage.getItem('brogram'))
+
+        } 
+        setSavedWorkouts(savedData)
+
+    }, [savedWorkouts])
+
+This way, when savedWorkouts has something, it will run
+
+12 00 values won't automatically populate just yet, because we didn't pass the information
+
+in savedWeights is not an attirubte style prop yet, we need to make it a prop ro the workout card
+
+we will also pass savedWeights to the workout card as
+
+savedWeights={savedWorkouts?.[workoutIndex]?.weights} 
+
+in case there are no savedWorkouts, or workout index to begin with
+
+13 30 final look of the saved workouts
+useEffect(() => {
+        if (!localStorage) { return }
+        let savedData = {} //let allows us to overwrite it
+        if(localStorage.getItem('brogram')){// if there is any data here, it will comeback true
+            savedData = JSON.parse(localStorage.getItem('brogram'))
+
+        } 
+        setSavedWorkouts(savedData)
+
+    }, [])
+
+13 40 clean the code often. Remove console.log
+
+Now we need to show up conditionally, which days the user is allowed to click on
+
+14 40 we will add to the 
+const completedWorkouts = Object.keys(savedWorkouts || {}).FILTER((val)=>{
+        const entry = savedWorkouts(val)
+        return entry.isComplete
+    })
+
+with object.keys we will either get our saved workouts or with a backout of empty object in case it is null
+
+16 10 we will define a variable isLocked in the training-plan-grid
+
+it will require some work
+
+if workoutIndex === 0, then that means we are on day one, and we don't want this to be locked, then it is false
+
+it will be always unlocked
+
+16 54 otherwise, we  will see in completed workouts if there are formatted strings
+
+completedWorkouts.includes('${workoutIndex - 1}') 
+// it will look at completed workouts
+
+17 20 we change map to filter in our completedWorkouts variable
+It's not meant to be a map.
+
+It's meant to be a filter.
+
+Because what the map would have done is it would have returned the true and the falses, which could
+
+technically have worked.
+
+But what we're going to do in this case is actually use the filter.
+
+So instead we're only going to have an array of the completed workouts instead of having a whole bunch
+
+of false statuses for incomplete ones.
+
+we only care for the completed ones.
+
+17 45 we will check if the array contains yesterday index or the workout - 1 index is in there, then we can do today's exercise
+
+if completed workout does include yesterday's workout, then it is not locked
+
+18 50 we are false at first and the rest are true
+
+we will change the css of the plan card in the inactive state we set
+
+ className={'card plan-card ' + (isLocked ? 'inactive' : '')}
+
+19 10 in the index.css we will go to inactive and add:
+background: green !important;
+
+with this, the icon is locked already
+
+20 05 we have the status locked working, but it is still clickable

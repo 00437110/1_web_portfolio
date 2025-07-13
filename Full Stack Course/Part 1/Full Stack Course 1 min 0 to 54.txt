@@ -1,0 +1,381 @@
+13 34 Start of course
+https://www.youtube.com/watch?v=dKch_WrYwd4
+
+13 50 Chapter 1: Create Portfolio
+
+Time to craft the portfolio to fill with projects
+Show design, personality and others and become a legendary programmer.
+
+
+14 50 Portfolio: Making it in HTML and CSS only for efficiency
+
+15 04 He uses an instance of VS. Visual Studio Code:
+
+****1 Installing VS code
+
+It sets up its address in PATH
+
+https://www.youtube.com/watch?v=B-s71n0dHUk  Learn Visual Studio Code in 7min (Official Beginner Tutorial) 
+
+Installing Git
+
+https://git-scm.com/downloads/win 
+
+ctrl + o to open file
+ctrl + n for new file
+
+intellisense gives you autocompletion
+
+3 15 It has autosave for any changes
+
+In order to run it requires debuggers
+
+***2 Installing node.js
+
+Installing Chocolatey and features
+
+Done Installing node.js
+***2 
+
+3 21 Writing in Python
+
+3 44 there's no python intellisense, you need to install it
+
+Install extension for Python
+
+4 20 Run Python with its debugger
+
+5 00 HTML example
+
+An extension can show a preview of a HTML and CSS file in visual studio code
+
+It is an extension called Live Preview 
+
+In webpages, you can right click and click show preview to see how the webpage should look
+
+6 20 you can choose themes in the command palette
+
+Installing Typescript
+
+****1 
+
+
+15 04 He uses an instance of VS. Visual Studio Code. A free theme.
+
+15 26 He'll open a new project directory.
+
+15 40 Creating a folder through the VS code interface
+
+16 18 Opening a brand new instance of VS code
+
+-----------------
+
+Project 1: Web Portfolio
+
+17 00 We'll use HTMl and CSS
+
+17 40 New File and create index.html
+
+18 00 Special hack: Typing the exclamation key (!) it will suggest a boilerplate code
+
+<!DOCTYPE html>
+<html lang="en">
+<head> // meta information about the page, not visible on the website
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> //what goes in the page
+    
+</body>
+</html>
+
+19 09 in the github repo you can see the actual code
+
+style.css style of the website
+
+content of the website
+
+Theyll be wired later
+
+20 15 downloading css style sheet
+https://fantacss.smoljames.com/
+
+it will style all of the layouts
+
+The elements will be done by FantaCSS
+
+https://github.com/jamezmca/full-stack-course
+Contains the fanta.css file which can also be used
+
+Download the fanta.css file
+
+21 00 
+it will have all the css for this course
+
+the cssallows light and dark theme
+
+21 50 Search for line 66 and 113, select it and delete it.
+
+You can comment it too
+
+It may actually be already commented
+
+
+22 12 Those 3 files are to be used for now
+
+Create new folder called public
+
+public is for serving public assets, images, video, static information, etc
+
+There will be public thumbnails
+
+22 50 Thumbnails
+
+23 25 We will use default images for now, you can download them from the github repo
+
+24 22 Load up website in development mode
+
+24 55 Download Extension for VS called: Live Server
+
+Install it and you can right click inside the HTML file and this will open the html file in a browser, but serving it up from an URL, and anychanges done in the document will be reflected in the page.
+
+25 50 It will show changes much faster
+
+if you don't get the website shown right there, you can seee the port where it is connected in the lower right corner of VS codee
+
+You can type the port yourself
+http://127.0.0.1:5500/1_web_portfolio/index.html
+
+or you can type localhost: 5500 and the name of the portfolio
+http://localhost:5500/1_web_portfolio/index.html
+
+This is for development purposes only
+
+27 00 We will wire up the 2 css files to the document
+
+It goes in the head tags which contain the meta information for this project.
+
+<link rel="stylesheet" href="style.css"/>
+<link rel="stylesheet" href="fanta.css"/>
+
+It will apply the style to the whole document
+
+28 58 VS code shortcuts
+
+https://www.vscodeshortcuts.smoljames.com/
+It has commands used regularly
+
+you can add to the github if you wish
+
+29 45 Finishing the head section
+
+Give it a title and it will change
+
+<title>Erick Style Portfolio</title>
+
+30 20 Giving content to the page
+
+Use <header> in body. It will contain the header of the page
+
+30 40 then put main and foooter
+
+They tell the user about the page, and helps understand the html code
+
+31 00 Working on the header. Show them that you know what you are doing.
+
+<a> in an anchor tag that will be a link to something
+
+inside the <a> we will put the href
+
+3148 <a href="/"> 
+
+it will be used when we deploy the portfolio
+
+32 00 On the right hand side it will be a <nav>. It will contain links so the user can go to useful sites
+
+we need another <a> tag
+
+we will use 2 of them
+
+You can link to internal parts of the document
+
+we will link to the linked in and to the github
+
+33 30 having a good linked in and github will be important to connect with people and show you are not AI
+
+34 00 Using icons for the website
+
+-------ICON\
+
+Go to fontawesome.com
+
+Search for Github and you'll have the free icons from github.
+
+Select the github icon and it will give you a code so you can use it
+
+You can copy the code and use it directly inside of the anchor opening and closing tags
+
+35 00 if you save it like this, you still cannot see it
+
+Go search the fontawesom cdn 6.0
+
+https://cdnjs.com/libraries/font-awesome
+
+35 30
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+copy it in the head sectionn of the document
+
+It will enable the use of fontawesome icons
+
+35 50
+Now our website will have the icon showing
+
+Then you can copy it and use fa-linkedin so you can link to your linkedin page
+
+36 00 You can copy your linkedin  personal page and paste it in your href attribute
+
+37 00 adding another attribute to the a tag
+
+in order to open them in new tabs, you use the target attribute
+
+<... target="_blank"... >
+
+This will make it so the webpage is opened in a different blank tab
+
+
+38 00 With this, the head section of the document is complete for now
+
+-----FOOTER
+
+38 10 Go to the footer
+
+it will contain a p tag for some text. Using an a tag we will add our name
+
+star the repo on github ! 
+
+a public repo will get people to star on it. We will have an href too, to the specific repo of this codebase
+
+<p>By <a target="_blank" href="https://github.com/00437110">Erick </a> star the repo on <a target="_blank" href=" "> Github </a></p>
+
+40 00 Beneath the footer,  we will add an extra code in javascript
+
+we will make it change color
+
+it will use document object manipulation, using the script tag
+
+
+<script>
+
+----------MAIN CONTENT OF PORTFOLIO
+
+41 20 content will be filled, it will be made interactive with javascript and style it with css
+
+41 35 going to work on <main>
+
+create a <section> tag. They add a semantic meaning to our website
+
+we will use div and class in the <section> tag
+
+<div class="intro-header"></div>
+
+42 30 add h1 for the header 1, it is the greatest typography tag, < h1 and p tag
+
+43 10 the div will group our information together
+
+Windows key +. adds an emoji
+
+43 20 you can see the results in your page
+
+below div add a h5 tag, all headers have bolder font
+
+add class intro description
+<h5 class="intro-description">
+</h5>
+
+Software developer based in El Salvador.
+
+44 50 it will be styled later
+
+44 20 add a new div with class="links-container"
+
+<div class="links-container">
+    <a target="_blank" href=""> <i class="fa-solid fa-arrow-right"></i>Email me</a>
+</div>
+
+So people can email you
+
+Inside the class you can add link-arrow to modify it a bit
+
+Use the icon of arrow to poin to it
+
+<i class="fa-solid link-arrow fa-arrow-right">
+
+47 15 Underneath that link we will include our github and linkedin
+
+Paste the links underneath the email. Remove the icons and add linkedin and Github
+
+48 20 move the icon out ouf the anchor tag
+<div class="links-container">
+                <i class="fa-solid link-arrow fa-arrow-right"></i>
+                <a target="_blank" href=""> Email me</a>
+
+so now it iis the first child of the links container div
+
+add to the href in the a tag with email "mailto:<your email>"
+
+49 00 remove the target="_blank" as it is unnecessary
+
+49 10 Coding the game: 
+Within the section tag, at the bottom add a new div
+
+   <div id="play-game">
+
+
+            </div>
+
+49 45 create a button with an onclick attribute
+
+50 30 Add a div class=color-div, it will have text and the color input that allows the user to put select the background of the webiste
+
+52 10 Add the following code
+            <div class="color-div">
+                <h4> Pick a color</h4>
+                <p>Great. Now it is ruined.</p>
+                <input type="color" id="color-picker" onchange="" value="#0084ff" /> 
+                <button onclick="">reset </button>
+
+            </div>
+
+input type is a color wheel, the id will be used to identify it, onchange will be added later with javascript and add a color value  of #0084ff
+
+the button will be used to reset later on
+
+52 50 Working on divs that do no display
+
+grab this paragraph text <p>Great. Now it is ruined.</p>
+
+you do not write inline style generally ,but we will do it for certtain elements
+
+this paragraph shouldn't show at first
+
+add : style="display: none;" to hide that text for now
+
+53 50  also add this to the reset button to add it in the meantime
+
+we also want to hide the color picker text and input until the user presses the "play a game"  button
+
+so we hide the whole div with display none too
+
+54 20 we will wire this with javascript to display the game later on
+
+-------SECOND SECTION
+
+
+
+
+
+
+
+

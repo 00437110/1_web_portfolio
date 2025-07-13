@@ -18,8 +18,8 @@ export default function Hero() {
                 </div>
                 <div className="rule-item">
                     <p><b>Reps</b></p>
-                    <p>Every rep is a pause rep following a
-                        <abbr title="2 seconds down - 2 seconds pause - 2 seconds up">2-2-2 tempo</abbr> </p>
+                    <p>Every rep is a pause rep following a 
+                        <abbr title="2 seconds down - 2 seconds pause - 2 seconds up"> 2-2-2 tempo</abbr> </p>
                 </div>
                 <div className="rule-item">
                     <p><b>Weight*</b></p>
