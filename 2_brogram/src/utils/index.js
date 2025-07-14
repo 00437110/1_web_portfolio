@@ -35,7 +35,7 @@ export const workoutProgram = {
             { name: "Leg press", sets: 3, reps: 10 },
             { name: "Hip thrust", sets: 3, reps: 10 },
             { name: "Hamstring curl", sets: 3, reps: 12 },
-            { name: "Leg press calf raises", sets: 3, reps: 15 }
+            { name: "Calf raises", sets: 3, reps: 15 }
         ]
     },
     3: {  // Push

@@ -260,3 +260,71 @@ Day 1 is special, so it is always open, every other day needs to read the day be
 
 ****DEPLOYING
 23 50 we will use github, gitlab and netlify
+
+use github desktop
+
+24 30 click "add existing repository"
+
+go choose the brogram folder
+
+add a description to it
+
+if you create from a blank project, a readme is important
+
+get the readme for potential employer from the tutorial
+
+26 10 do not private this code, as it will be for potential employes
+
+
+26 30 now that you have pushed it. go to your github profile. There will be your project
+
+26 50 go to netifly so you can deploy your projects
+
+you can create an account or associate your github account to it 
+
+then in netlify you go to add new site button, then import an existing project
+
+we will deploy all projects like this
+
+deploy from github, you authenticate with it.
+
+you have to look up your repo. If it isn't here, you need to go below to the "configure the netlify app on github" link
+
+27 40 authenticate the brogram repo
+
+select the repo. it should see it is a react project;.
+
+then you click the deploy button.
+
+28 00 Go over to domain management
+
+and it will show the default url
+
+in options we can edit the site name.
+
+use a keywoard for the url site
+
+choose soemthing that represents your sites
+
+28 50 when deployed, you can go see it
+
+you can access it, as any site.
+
+Now you can make some personalizations here
+
+29 45 copy this link, and in the index.css we have finsihed our project number 1
+
+Add it to your portfolio.
+
+You can now add some new technologies, description or anything to your new portfolio information
+
+31 00 we can update our portfolio with the information in the brogram
+
+we can add it to our github code
+
+now a recruiter or prospective employer will see the project
+
+32 00 the portfolio will be shown last
+
+
+

@@ -6,7 +6,7 @@ import { exerciseDescriptions } from "../utils"
 export default function WorkoutCard(props) {
     const { trainingPlan, workoutIndex, type, dayNum, icon, savedWeights, handleSave, handleComplete } = props
 
-    const { warmup, workout } = trainingPlan || {} // if empty, it won't crash the app
+    const { warmup, workout } = trainingPlan || {} 
 
     const [showExerciseDescription, setShowExerciseDescription] = useState(null)
 
@@ -100,7 +100,7 @@ export default function WorkoutCard(props) {
                             <input value={weights[workoutExercise.name] || ''} onChange={(e) => {
                                 handleAddWeight(workoutExercise.name, e.target.value)
 
-                            }} //aún cuando no hemos dado guaradr, si los inputs están llenos y los llenamos a mano o por parte del almacenamiento local, basta para que abra el botón de complet
+                            }} 
                                 className="weight-input" placeholder="14" />
 
                         </React.Fragment>

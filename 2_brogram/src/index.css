@@ -139,7 +139,7 @@ input:disabled {
 
 button.help-icon {
     pointer-events: none;
-    opacity: 0;
+    opacity: 0.3;
     padding: 0 0.5rem;
     color: var(--color-link);
     border: unset;
@@ -169,8 +169,7 @@ button.help-icon:hover {
 
 .modal-container {
     position: fixed;
-    top: 0;
-    left: 0;
+
     width: 100vw;
     height: 100vw;
     display: flex;
@@ -179,6 +178,10 @@ button.help-icon:hover {
     justify-content: center;
     z-index: 100;
     padding: 1rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
 }
 
 .modal-underlay {
@@ -191,6 +194,7 @@ button.help-icon:hover {
     border: none;
     border-radius: 0;
     box-shadow: unset;
+
 
 }
 
