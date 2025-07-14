@@ -19,7 +19,6 @@ export default function Layout(props) {
             </p>
         </footer>
     )
-//USER.netifly.app
 
     return (
         <>

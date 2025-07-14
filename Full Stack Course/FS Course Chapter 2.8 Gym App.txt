@@ -258,4 +258,5 @@ Day 1 is special, so it is always open, every other day needs to read the day be
 
 
 
-DEPLOYING
+****DEPLOYING
+23 50 we will use github, gitlab and netlify
