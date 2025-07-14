@@ -64,7 +64,7 @@ h3,
     position: relative;
     z-index: 1;
     cursor: not-allowed;
-    background: green !important;
+    background: rgb(230, 63, 63) !important;
     opacity: 0.8;
 }
 
