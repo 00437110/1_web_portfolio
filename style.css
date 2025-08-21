@@ -89,6 +89,10 @@ section{
 
 }
 
+.project-card>div:first-of-type{
+    flex:1;
+}
+
 /*Links to the projects*/
 .project-links{
     display: flex;
