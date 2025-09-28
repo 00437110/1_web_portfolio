@@ -40,23 +40,18 @@
                 <a target="_blank" href="https://github.com/00437110">Github</a>
                 <a target="_blank" href="https://www.linkedin.com/in/erick-dominguez-mejia-7a2981177/">LinkedIn</a>
 
-
             </div>
 
             <div id="play-game">
-                <button onclick="playGame()">Play game??</button>
+                <button onclick="playGame()">Play game?</button>
             </div>
 
             <div style="display: none;" class="color-div">
                 <h4> Pick a color</h4>
                 <p style="display: none;">Great. Now it is ruined.</p>
                 <input type="color" id="color-picker" onchange="changeColor()" value="#0084ff" />
-                <button style="display: none;" onclick="resetColor()">reset </button>
-
-
+                <button style="display: none;" onclick="resetColor()">Reset </button>
             </div>
-
-
 
         </section>
 
@@ -72,11 +67,7 @@
                 <tbody>
                     <tr>
                         <td>Javascript</td>
-                        <td>React Js | Nodejs</td>
-                    </tr>
-                    <tr>
-                        <td>Python</td>
-                        <td>Data Analysis | Data Visualization</td>
+                        <td>ReactJS | NodeJS</td>
                     </tr>
                     <tr>
                         <td>Web</td>
@@ -84,15 +75,11 @@
                     </tr>
                     <tr>
                         <td>Design</td>
-                        <td>Canvas | Pixl | Paint.net</td>
+                        <td>Canvas | Paint.net</td>
                     </tr>
                 </tbody>
-
-
             </table>
-
         </section>
-
 
         <section>
             <h2>Latest Projects</h2>
@@ -133,13 +120,13 @@
                         <h4>Smallstore</h4>
                         <div class="tech-list">
                             <div class="card-button-secondary">
-                                <p> NextJs</p>
+                                <p>NextJS</p>
                             </div>
                             <div class="card-button-secondary">
-                                <p> Fanta CSS</p>
+                                <p>Fanta CSS</p>
                             </div>
                             <div class="card-button-secondary">
-                                <p> Stripe</p>
+                                <p>Stripe</p>
                             </div>
 
                         </div>
@@ -157,20 +144,19 @@
                     </div>
                 </div>
 
-
                 <div class="project-card">
                     <div>
                         <p>August 25, 2024</p>
                         <h4>Expenny | The subscription tracker</h4>
                         <div class="tech-list">
                             <div class="card-button-secondary">
-                                <p> NextJs</p>
+                                <p>NextJs</p>
                             </div>
                             <div class="card-button-secondary">
-                                <p> FantaCSS</p>
+                                <p>FantaCSS</p>
                             </div>
                             <div class="card-button-secondary">
-                                <p> Firebase</p>
+                                <p>Firebase</p>
                             </div>
 
                         </div>
@@ -188,12 +174,9 @@
                     </div>
                 </div>
 
-
-
             </div>
 
         </section>
-
 
     </main>
     <footer>
@@ -202,57 +185,41 @@
 
     </footer>
     <script>
-        //interactivity for process
-        //1- select html elements
-        const body = document.querySelector('body') //like css select, it finds the matching element
-        const colorInput = document.getElementById('color-picker')//this one selects elements with an id, the color input has the id='color-picker'
-        const colorDiv = document.querySelector('.color-div')//we use .color-div because it is a class
-        const hiddenText = document.querySelector('.color-div p') //great you ruined
-        const resetBtn = document.querySelector('.color-div button')//the reset
-        const playBtn = document.getElementById('play-game')//button functionality
-
-
-
-
-        //2-create funcionts
+        const body = document.querySelector('body')
+        const colorInput = document.getElementById('color-picker')
+        const colorDiv = document.querySelector('.color-div')
+        const hiddenText = document.querySelector('.color-div p') 
+        const resetBtn = document.querySelector('.color-div button')
+        const playBtn = document.getElementById('play-game')
 
         function playGame() {
-            //this function enables the play of the game, by showing the color selector input
-
-            colorDiv.style.display = 'block' //grabbing colorDiv, its style and 
-            // its display status and change it to "block", because it is normally in "none"
-
-            playBtn.style.display = 'none' // it will hide the button
+            
+            colorDiv.style.display = 'block' 
+            
+            playBtn.style.display = 'none' 
 
         }
 
         function changeColor() {
-            //takae the users selected color on the input and assign it to be the bg color of the website
-
-            const selectedColor = colorInput.value //to get the selected color
+            
+            const selectedColor = colorInput.value 
             body.style.background = selectedColor
-            resetBtn.style.display = 'block' //show the reset buttn, hidden text and remove color input
+            resetBtn.style.display = 'block' 
             hiddenText.style.display = 'block'
-            colorInput.style.display = 'none '//remove color input
+            colorInput.style.display = 'none '
 
         }
 
-
         function resetColor() {
             colorInput.style.display = 'block'
-            body.style.background = 'white' // in case of dark mode, we need to do a function
+            body.style.background = 'white' 
             playBtn.style.display = 'block'
-
 
             hiddenText.style.display = 'none'
             resetBtn.style.display = 'none'
             colorDiv.style.display = 'none'
 
         }
-
-
-
-        //3- asign functions to the buttonhs and call the elements
 
     </script>
 </body>

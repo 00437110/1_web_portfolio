@@ -47,7 +47,7 @@ section{
 }
 
 .intro-header p {
-    padding-top: 0.25rem; /*will create a bit of space between title and intro space*/
+    padding-top: 0.25rem; 
 
 }
 
@@ -64,7 +64,7 @@ section{
 }
 
 .link-arrow {
-    color: var(--color-link);/* from the fantaCSS file*/
+    color: var(--color-link);
     transform: rotate(-45deg);
 
 }
@@ -93,7 +93,6 @@ section{
     flex:1;
 }
 
-/*Links to the projects*/
 .project-links{
     display: flex;
     align-items: center;
@@ -106,12 +105,12 @@ section{
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    flex-wrap: wrap; /*wrap will let the row wrap to the next line if it overflows the screen*/
-    padding: 0.25rem 0; /*0.25 vertical, 0 horizontal*/
+    flex-wrap: wrap; 
+    padding: 0.25rem 0; 
 }
 
 .tech-list div {
-    padding: 0.1rem 0.5rem; /*first is vertical, second is horizontal*/
+    padding: 0.1rem 0.5rem; 
     border-radius: var(--border-radius-small);
 }
 
@@ -121,7 +120,7 @@ section{
 
 @media (min-width: 640px) {
     .project-card{
-        flex-direction: row; /*everthing is vertically oriented, so this will be in row*/
+        flex-direction: row; 
     }
     
     .project-card .img-div{
