@@ -21,4 +21,4 @@ And check it out!
 
 ## Comments, critics, suggestions or ideas?
 
-If you have any ideas for improvement for this portfolio, please submit them as an issue for now! For other projects.
+If you have any ideas for improvement for this portfolio, please submit them as an issue for now!
