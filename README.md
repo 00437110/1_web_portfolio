@@ -1,4 +1,4 @@
-# Portfolio made with HTML and CSS, for my projects as of September 2025
+# Portfolio made with HTML and CSS, for my projects as of October 2025
 
 ## A simple portfolio with HTML and CSS only, deploayed in Netlify, with a little game for testing and all my available projects online.
 
