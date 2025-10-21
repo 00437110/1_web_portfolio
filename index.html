@@ -118,7 +118,11 @@
                         </div>
                     </div>
                     <div class="img-div">
-                        <img class="big-img" src="https://github.com/00437110/1_web_portfolio/blob/main/public/brogram.png?raw=true" alt="erick-thumbnail">
+                        <a target="_blank" href="https://eddomin-brogram.netlify.app/">
+                            <img class="big-img"
+                                src="https://github.com/00437110/1_web_portfolio/blob/main/public/brogram.png?raw=true"
+                                alt="erick-thumbnail">
+                        </a>
                     </div>
                 </div>
 
@@ -148,7 +152,11 @@
                         </div>
                     </div>
                     <div class="img-div">
-                        <img class="big-img" src="https://github.com/00437110/1_web_portfolio/blob/main/public/smallstore.png?raw=true" alt="erick-thumbnail">
+                        <a target="_blank" href="https://master.d29qibdwd6pchf.amplifyapp.com/">
+                            <img class="big-img"
+                                src="https://github.com/00437110/1_web_portfolio/blob/main/public/smallstore.png?raw=true"
+                                alt="erick-thumbnail">
+                        </a>
                     </div>
                 </div>
 
@@ -178,7 +186,11 @@
                         </div>
                     </div>
                     <div class="img-div">
-                        <img class="big-img" src="https://github.com/00437110/1_web_portfolio/blob/main/public/expenny.png?raw=true" alt="erick-thumbnail">
+                        <a target="_blank" href="https://eddomin-expenny.netlify.app">
+                            <img class="big-img"
+                                src="https://github.com/00437110/1_web_portfolio/blob/main/public/expenny.png?raw=true"
+                                alt="erick-thumbnail">
+                        </a>
                     </div>
                 </div>
 
@@ -196,23 +208,23 @@
         const body = document.querySelector('body')
         const colorInput = document.getElementById('color-picker')
         const colorDiv = document.querySelector('.color-div')
-        const hiddenText = document.querySelector('.color-div p') 
+        const hiddenText = document.querySelector('.color-div p')
         const resetBtn = document.querySelector('.color-div button')
         const playBtn = document.getElementById('play-game')
 
         function playGame() {
-            
-            colorDiv.style.display = 'block' 
-            
-            playBtn.style.display = 'none' 
+
+            colorDiv.style.display = 'block'
+
+            playBtn.style.display = 'none'
 
         }
 
         function changeColor() {
-            
-            const selectedColor = colorInput.value 
+
+            const selectedColor = colorInput.value
             body.style.background = selectedColor
-            resetBtn.style.display = 'block' 
+            resetBtn.style.display = 'block'
             hiddenText.style.display = 'block'
             colorInput.style.display = 'none '
 
@@ -220,7 +232,7 @@
 
         function resetColor() {
             colorInput.style.display = 'block'
-            body.style.background = 'white' 
+            body.style.background = 'white'
             playBtn.style.display = 'block'
 
             hiddenText.style.display = 'none'
